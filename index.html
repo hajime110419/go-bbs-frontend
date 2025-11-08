@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仮設Go掲示板</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Goインメモリ掲示板</h1>
+    </header>
+
+    <main>
+        <section id="post-form">
+            <h2>新規投稿</h2>
+            <form id="new-post-form">
+                <input type="text" id="post-title" placeholder="タイトル" required>
+                <textarea id="post-content" placeholder="内容" required></textarea>
+                <button type="submit">投稿する</button>
+            </form>
+            <p id="message" class="hidden"></p>
+        </section>
+
+        <hr>
+
+        <section id="posts-list">
+            <h2>投稿一覧</h2>
+            <ul id="posts-container">
+                <p>投稿を読み込み中...</p>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
